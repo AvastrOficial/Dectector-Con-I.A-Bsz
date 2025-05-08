@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Detector de partículas - BSZ</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h2>Detector de Partículas</h2>
+<p>Deliza hacia abajo para ver mas</p>
+        <p><strong>Autor:</strong> BSZ - AvaStrOficial</p>
+        <p><strong>Descripción:</strong> Este sistema detecta partículas pequeñas (como polvo o luz flotante) en un video o transmisión en vivo, resaltándolas en tiempo real.</p>
+        <p><strong>Tecnologías:</strong><br>
+            - JavaScript<br>
+            - OpenCV.js<br>
+            - HTML5 Video<br>
+            - Canvas API
+        </p>
+        <p><strong>Uso:</strong> El sistema analiza la imagen, detecta partículas y muestra las estadísticas en tiempo real.</p>
+
+        <!-- Botón de carga -->
+        <label class="upload-btn">
+            <i class="fas fa-upload"></i> Cargar video/gif
+            <input type="file" id="fileInput" accept="video/mp4, image/gif" style="display:none;">
+        </label>
+        <p style="font-size: 12px; margin-top:5px;">Archivos permitidos: MP4 o GIF</p>
+    </div>
+
+    <div class="main">
+        <div class="video-container">
+            <video id="video" width="640" height="480" crossorigin="anonymous" muted style="display:none;">
+    <source src="https://files.catbox.moe/7i7f7o.mp4" type="video/mp4">
+</video>
+
+            <canvas id="canvas" width="640" height="480"></canvas>
+        </div>
+        <div class="stats">
+            <div class="stat-box">Partículas actuales: <span id="currentCount">0</span></div>
+            <div class="stat-box">Totales detectadas: <span id="totalCount">0</span></div>
+        </div>
+    </div>
+
+</div>
+
+<!-- OpenCV -->
+<script async src="https://docs.opencv.org/4.5.5/opencv.js" onload="onOpenCvReady();"></script>
+</body>
+</html>
