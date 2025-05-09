@@ -82,3 +82,4 @@ git clone https://github.com/tu_usuario/detector-de-armas-bsz.git
 
 Abre el archivo index.html en tu navegador para comenzar a usar la aplicación.
 ```
+![image](https://github.com/user-attachments/assets/407f52ad-6c24-4892-96a9-bdf7459f180e)
