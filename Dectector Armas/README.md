@@ -50,9 +50,9 @@ cocoSsd.load().then(loadedModel => {
     console.log('Modelo Coco-SSD cargado ✅');
     startCanvasRendering();
 });
-
-Este bloque carga el modelo Coco-SSD y, una vez cargado, inicia el procesamiento del video para la detección.
 ```
+Este bloque carga el modelo Coco-SSD y, una vez cargado, inicia el procesamiento del video para la detección.
+
 
 ## Detección en tiempo real : 
 ```javascript
@@ -63,23 +63,24 @@ model.detect(video).then(predictions => {
         }
     });
 });
-
-Aquí, el modelo detecta objetos en el video y verifica si el objeto detectado es un arma (como un cuchillo). Si es un arma, se dibuja un cuadro alrededor del objeto y se actualizan las estadísticas.
 ```
+Aquí, el modelo detecta objetos en el video y verifica si el objeto detectado es un arma (como un cuchillo). Si es un arma, se dibuja un cuadro alrededor del objeto y se actualizan las estadísticas.
+
 
 ## Subir y cambiar el video
 ```javascript
 document.getElementById('fileInput').addEventListener('change', function(e) {
     // Subir video
 });
-Este código permite al usuario cargar un archivo de video, que luego se sube a un servidor y se usa como fuente para el análisis.
 ```
+Este código permite al usuario cargar un archivo de video, que luego se sube a un servidor y se usa como fuente para el análisis.
+
 ## Instalación
 Clona este repositorio en tu máquina local:
 
 ```bash
 git clone https://github.com/tu_usuario/detector-de-armas-bsz.git
-
-Abre el archivo index.html en tu navegador para comenzar a usar la aplicación.
 ```
+Abre el archivo index.html en tu navegador para comenzar a usar la aplicación.
+
 ![image](https://github.com/user-attachments/assets/407f52ad-6c24-4892-96a9-bdf7459f180e)
