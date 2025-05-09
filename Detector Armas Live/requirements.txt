@@ -1,0 +1,8 @@
+opencv-python
+ultralytics
+numpy
+Pillow
+matplotlib
+tqdm
+pip install python-telegram-bot==22.0
+pip install pytz
