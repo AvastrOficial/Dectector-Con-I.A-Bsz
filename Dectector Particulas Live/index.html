@@ -1,0 +1,12 @@
+<body>
+  <video id="video" autoplay muted playsinline><source></video>
+  <canvas id="canvas"></canvas>
+  <div class="ui">
+    <p>Detecciones actuales: <span id="currentCount">0</span></p>
+    <p>Total detectadas: <span id="totalCount">0</span></p>
+    <p>Estado IA: <span id="status">Iniciando...</span></p>
+  </div>
+
+  <!-- TensorFlow y OpenCV -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0"></script>
+  <script async src="https://docs.opencv.org/4.x/opencv.js" onload="onOpenCvReady()"></script>
